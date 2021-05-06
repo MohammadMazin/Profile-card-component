@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    :root{
+      --font: 'Kumbh Sans', sans-serif;
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body{
+      position:relative;
+    }
+
+    .content{
+      text-align: center;
+      width:100%;
+      background-color: hsl(185, 75%, 39%);
+     }
+
+     .contentCard{
+       position: relative;
+       overflow: hidden;
+       padding: 5rem 1rem;
+     }
+
+     .bg1{
+       position: absolute;
+       height:auto;
+       width:800px;
+       right:-200px;
+       bottom:-500px;
+     }
+
+     .bg2{
+       position: absolute;
+       height:auto;
+       width:800px;
+       left:-200px;
+       top:-400px;
+     }
+
+     .card{
+       background-color: white;
+
+       width:100%;
+       max-width: 500px;
+       
+       margin-left: auto;
+       margin-right: auto;
+       border-radius: 20px;
+       position: relative;
+
+       background-image: url('images/bg-pattern-card.svg') ;
+       background-repeat: no-repeat;
+       background-size: 100% 200px;
+     }
+
+     .cardBg{
+       height:auto;
+       width:100%;
+       border: 20px;
+     }
+
+     .personImg{
+       position: absolute;
+       top:150px;
+       left:190px;
+       
+       border-radius: 50px;
+       border: 5px solid white;
+       background-color: white;
+       
+     }
+
+     .details{
+      
+      padding:4rem;
+      border-bottom: 1px solid hsl(227, 10%, 46%);
+     }
+
+     .flex{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+     }
+
+     .name{
+       padding-right: 1rem;
+       color: hsl(229, 23%, 23%);
+       font-size: 1.5rem;
+     }
+
+     .stats{
+       padding:2rem;
+     }
+
+     .num{
+       padding-top: 1rem;
+       padding-bottom: 1rem;
+     }
+
+     .numTitle{
+       color: hsl(227, 10%, 46%);
+       
+     }
+
+     .p1{
+      margin-top: 220px;
+     }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+     @media only screen and (max-width: 376px){
+       /* .card{
+         width: 320px;
+         margin-left: 0px;
+         margin-right: 0px;
+         
+       } */
+
+       .contentCard{
+         padding:5rem 1rem;
+       }
+
+
+       .personImg{
+         left:120px
+       }
+
+       .stats{
+         padding: 2rem 1.5rem; 
+       }
+
+       .num{
+         font-size:1.5rem;
+       }
+
+       .numTitle{
+         font-size: 0.8rem;;
+       }
+     }
+
+  </style>
+</head>
+
+
+
+
+<body>
+
+  <div class="content">
+    <div class="contentCard">
+
+      <img src="images/bg-pattern-bottom.svg" alt="" class="bg1">
+      <img src="images/bg-pattern-top.svg" alt="" class="bg2">
+     
+     
+      <div class="card">
+
+        <!-- <img src="images/bg-pattern-card.svg" alt="" class="cardBg"> -->
+        <img src="images/image-victor.jpg" alt="" class="personImg">
+        
+        
+        <div class="details">
+          <div class="flex p1">
+              <h1 class="name">Victor Crest</h1>
+              <h1 style="color: hsl(227, 10%, 46%); font-size: 1.5rem;font-weight: 400;">26</h1>
+          </div>
+            <h1 style="padding-top: 1rem; font-size: 1.2rem;color: hsl(227, 10%, 46%); ">London</h1>
+  
+        </div>
+
+        <div class="st">
+          <div class="flex">
+              <div class="stats">
+                <h1 class="num">80K</h1>
+                <p class="numTitle">Followers</p>
+              </div>
+
+              <div class="stats">
+                <h1 class="num">803K</h1>
+                <p class="numTitle">Likes</p>
+              </div>
+
+              <div class="stats">
+                <h1 class="num">1.4K</h1>
+                <p class="numTitle">Photos</p>
+              </div>
+
+
+
+            
+          </div>
+        </div>
+
+        <!-- Victor Crest
+  26
+  London
+
+  80K
+  Followers
+
+  803K
+  Likes
+
+  1.4K
+  
+  Photos -->
+
+
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Syed Mohammad Mazin</a>.
+  </div>
+</body>
+</html>
